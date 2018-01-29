@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DrugInfo"
+        android:layout_margin="10dp"
+        android:id="@+id/verf_drug_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity"
+        android:singleLine="true"
+        android:id="@+id/verf_quantity"
+        android:layout_alignTop="@+id/verf_drug_info"
+        android:layout_toEndOf="@+id/verf_drug_info" />
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Largetext"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:id="@+id/verf_brand_info"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/verf_quantity"
+        android:layout_alignStart="@+id/verf_drug_info" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Large Text"
+        android:singleLine="true"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:id="@+id/verf_shift"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/verf_quantity"
+        android:layout_alignStart="@+id/verf_quantity" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/verf_checkbox"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/verf_drug_info"
+        android:layout_alignParentEnd="true" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/verf_checkbox"
+        android:visibility="gone"
+        android:id="@+id/medium_layout"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#c0c0c0"
+                android:layout_alignTop="@+id/verf_medium_info"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="600dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BrandInfo"
+                android:id="@+id/verf_medium_info"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+
+</RelativeLayout>

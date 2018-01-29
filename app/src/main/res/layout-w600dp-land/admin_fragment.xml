@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/endtransparent"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/titleadmin"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:gravity="center"
+        android:background="@drawable/titledesign"
+        android:id="@+id/admintext"
+        android:layout_above="@+id/admin_username"
+        android:layout_alignStart="@+id/admin_username" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/hintusername"
+        android:textSize="30sp"
+        android:maxLines="1"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#009688"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColor="#009688"
+        android:textStyle="italic"
+        android:id="@+id/admin_username"
+        android:layout_above="@+id/admin_passwd"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/signup"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/centertransparent"
+        android:id="@+id/admin_signup"
+        android:layout_alignStart="@+id/admin_confirm"
+        android:layout_below="@+id/admin_confirm"
+        android:layout_alignEnd="@+id/admin_confirm" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/hintpasswd"
+        android:textColorHint="#009688"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:imeOptions="actionNext"
+        android:textColor="#009688"
+        android:textStyle="italic"
+        android:id="@+id/admin_passwd"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/admin_username"
+        android:layout_alignEnd="@+id/admin_username" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/confirm"
+        android:textColorHint="#009688"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:imeOptions="actionDone"
+        android:textColor="#009688"
+        android:textStyle="italic"
+        android:ems="10"
+        android:id="@+id/admin_confirm"
+        android:layout_below="@+id/admin_passwd"
+        android:layout_alignStart="@+id/admin_passwd"
+        android:layout_alignEnd="@+id/admin_passwd" />
+
+</RelativeLayout>

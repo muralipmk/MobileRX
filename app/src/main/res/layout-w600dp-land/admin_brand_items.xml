@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#00bfa5"
+        android:visibility="visible"
+        android:id="@+id/relative1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="138dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/patientname"
+                android:id="@+id/ePatientName"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rela1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Form"
+                android:id="@+id/mForm"
+                android:textColor="#000000"
+                android:layout_below="@+id/mDrugName"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="DrugName"
+                android:id="@+id/mDrugName"
+                android:paddingRight="80dp"
+                android:textColor="#000000"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Strength"
+                android:id="@+id/mStrength"
+                android:textColor="#000000"
+                android:layout_above="@+id/mForm"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Route"
+                android:id="@+id/mRoute"
+                android:paddingRight="200dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="#000000"
+                android:layout_alignTop="@+id/mFrequency" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Frequency"
+                android:id="@+id/mFrequency"
+                android:layout_alignParentBottom="true"
+                android:layout_alignEnd="@+id/mStrength"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.08">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox1"
+            android:layout_weight="1"
+            android:checked="false"
+            android:visibility="invisible"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox2"
+            android:layout_weight="1"
+            android:checked="false"
+            android:visibility="invisible"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:checked="false"
+            android:visibility="invisible"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/checkBox4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:checked="false"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="137dp"
+        android:id="@+id/brandList"
+        android:layout_weight="0.78" />
+
+    <EditText
+        android:layout_width="247dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners"
+        android:focusable="false"
+        android:clickable="false"
+        android:longClickable="false"
+        android:inputType="numberDecimal"
+        android:imeOptions="actionDone"
+        android:layout_toStartOf="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/textView"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        android:layout_gravity="right"
+        android:layout_weight="0.12"
+        android:text="SAVE"/>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/authorize">
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DrugInfo"
+        android:layout_margin="10dp"
+        android:id="@+id/auth_drug_info"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="admin_date"
+        android:singleLine="true"
+        android:id="@+id/auth_admin_date"
+        android:layout_alignTop="@+id/auth_drug_info"
+        android:layout_toEndOf="@+id/auth_drug_info" />
+
+    <TextView
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="BRAND INFO"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:id="@+id/auth_brand_info"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/auth_admin_date"
+        android:layout_alignStart="@+id/auth_drug_info" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="SHIFT"
+        android:singleLine="true"
+        android:textColor="@color/abc_input_method_navigation_guard"
+        android:id="@+id/auth_shift"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/auth_admin_date"
+        android:layout_alignStart="@+id/auth_admin_date" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/auth_checkbox"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignTop="@+id/auth_drug_info"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

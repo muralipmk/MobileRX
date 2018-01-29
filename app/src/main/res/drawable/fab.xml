@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    android:shape="oval"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/my_accent"/>
+    <padding
+        android:bottom="3px"
+        android:left="3px"
+        android:right="3px"
+        android:top="3px" />
+</shape>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"  android:layout_height="match_parent"
+    android:background="@color/background_floating_material_light"
+    android:layout_margin="5.0dp">
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/bednum"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pd_bed_num"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/patientname"
+        android:textColor="@color/accent_material_light"
+        android:layout_marginStart="5dp"
+        android:id="@+id/pd_patient_name"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/pd_bed_num" />
+
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/age_gender"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pd_age_gender"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/encounterID"
+        android:paddingTop="5dp"
+        android:id="@+id/pd_encounter_id"
+        android:layout_alignStart="@+id/pd_bed_num"
+        android:layout_marginEnd="81dp"
+        android:layout_below="@+id/pd_bed_num" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/admission_date"
+        android:paddingTop="5dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/pd_admission_date"
+        android:layout_alignBottom="@+id/pd_encounter_id"
+        android:layout_toEndOf="@+id/pd_bed_num" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/doctor"
+        android:paddingTop="5dp"
+        android:paddingStart="10dp"
+        android:id="@+id/pd_doctor_name"
+        android:layout_alignTop="@+id/pd_admission_date"
+        android:layout_alignStart="@+id/pd_age_gender" />
+
+</RelativeLayout>

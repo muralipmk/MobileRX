@@ -1,0 +1,216 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:layout_margin="40dp"
+    android:background="@drawable/rounded_corners"
+    tools:context="com.example.hmis.mprescibe.prescription.Prescription"
+    android:id="@+id/pp_info">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/pp_chemical_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/form"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pp_form_text"
+        android:layout_below="@+id/pp_chemical_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/pp_form_spinner"
+        android:layout_alignTop="@+id/pp_form_text"
+        android:layout_toEndOf="@+id/pp_form_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/route"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pp_route_text"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/pp_form_spinner"
+        android:layout_toStartOf="@+id/pp_route_spinner" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:id="@+id/pp_route_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/pp_route_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dosage"
+        android:layout_marginStart="10dp"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/dosage_Text"
+        android:layout_alignTop="@+id/pp_route_spinner"
+        android:layout_toEndOf="@+id/pp_route_spinner" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/pp_strength"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@+id/dosage_Text"
+        android:layout_toEndOf="@+id/dosage_Text" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/pp_unit_spinner"
+        android:layout_marginStart="5dp"
+        android:layout_alignBottom="@+id/pp_route_spinner"
+        android:layout_toEndOf="@+id/pp_strength" />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/frequency"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pp_frequency_text"
+        android:layout_below="@+id/pp_form_spinner"
+        android:layout_alignStart="@+id/pp_chemical_name" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/pp_frequency_type_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/pp_frequency_text"
+        android:layout_alignStart="@+id/pp_form_spinner" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/pp_frequency_spinner"
+        android:layout_marginStart="10dp"
+        android:layout_alignTop="@+id/pp_frequency_type_spinner"
+        android:layout_alignStart="@+id/pp_route_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/dosage"
+        android:id="@+id/pp_medium_dosage"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignTop="@+id/pp_frequency_spinner"
+        android:layout_alignStart="@+id/dosage_Text" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/pp_medium_uom_spinner"
+        android:layout_alignTop="@+id/pp_medium_strength"
+        android:layout_alignStart="@+id/pp_unit_spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/startdate"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pp_start_date"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/pp_frequency_type_spinner"
+        android:layout_alignStart="@+id/pp_frequency_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/starttime"
+        android:id="@+id/pp_start_time"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignTop="@+id/pp_start_date"
+        android:layout_alignStart="@+id/pp_frequency_type_spinner" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/enddate"
+        android:textColor="@color/accent_material_light"
+        android:id="@+id/pp_end_date"
+        android:layout_alignTop="@+id/pp_start_time"
+        android:layout_toEndOf="@+id/pp_route_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/endtime"
+        android:id="@+id/pp_end_time"
+        android:textColor="@color/accent_material_light"
+        android:layout_alignTop="@+id/pp_end_date"
+        android:layout_toEndOf="@+id/pp_frequency_spinner" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:id="@+id/cancel_Button"
+        android:background="@drawable/rounded_corners"
+        android:layout_margin="40dp"
+        android:textColor="@color/error_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/pp_start_date" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:textColor="@color/material_deep_teal_500"
+        android:id="@+id/save_Button"
+        android:background="@drawable/rounded_corners"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignTop="@+id/cancel_Button"
+        android:layout_toEndOf="@+id/pp_strength" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:id="@+id/pp_medium_strength"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:inputType="numberDecimal"
+        android:background="@drawable/rounded_corners"
+        android:layout_alignTop="@+id/pp_medium_dosage"
+        android:layout_alignStart="@+id/pp_strength" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/pp_medium_spinner"
+        android:layout_alignTop="@+id/pp_medium_uom_spinner"
+        android:layout_alignStart="@+id/pp_frequency_type_spinner"
+        android:layout_alignEnd="@+id/pp_end_time" />
+
+</RelativeLayout>

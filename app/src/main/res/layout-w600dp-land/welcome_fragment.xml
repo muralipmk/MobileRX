@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/endtransparent"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="@color/my_secondary_text"
+        android:textStyle="italic"
+        android:background="@drawable/titledesign"
+        android:id="@+id/textView2"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/setup"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:gravity="center"
+        android:background="@drawable/centertransparent"
+        android:id="@+id/setup"
+        android:layout_below="@+id/imageView"
+        android:layout_alignStart="@+id/textView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/sssihms"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

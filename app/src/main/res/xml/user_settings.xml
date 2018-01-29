@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings"
+    android:summary="Settings"
+    android:icon="@android:drawable/ic_menu_preferences" >
+
+    <PreferenceCategory
+        android:title="My Account">
+        <EditTextPreference
+            android:title="Username"
+            android:summary="sairam"
+            android:key="ADMIN_NAME" />
+        <EditTextPreference
+            android:title="Change Password"
+            android:summary="********"
+            android:password="true"
+            android:key="ADMIN_PASSWORD" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Advanced">
+
+        <EditTextPreference
+            android:title="SERVER IPADDRESS"
+            android:summary="XXXX.XXX.XX.XX"
+            android:key="SERVER_IPADDRESS" />
+
+        <EditTextPreference
+            android:title="SETUP URL"
+            android:summary="xxxxxx"
+            android:key="SETUP_URL" />
+
+        <CheckBoxPreference
+            android:key="pref_app_debug"
+            android:summary="@string/debug_summary"
+            android:checked="false"
+            android:title="@string/debug_option"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>

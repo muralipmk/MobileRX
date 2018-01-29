@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/endtransparent"
+    android:layout_marginTop="40dp">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/titleipaddress"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:gravity="center"
+        android:background="@drawable/titledesign"
+        android:id="@+id/ipaddressTitle"
+        android:layout_above="@+id/ipaddress"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColorHint="#009688"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#009688"
+        android:textStyle="italic"
+        android:id="@+id/ipaddress"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/ipaddressTitle" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/next"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:gravity="center"
+        android:background="@drawable/centertransparent"
+        android:id="@+id/next"
+        android:layout_alignTop="@+id/back"
+        android:layout_alignEnd="@+id/ipaddress" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/back"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        android:textColor="@color/window_background"
+        android:gravity="center"
+        android:background="@drawable/centertransparent"
+        android:id="@+id/back"
+        android:layout_below="@+id/ipaddress"
+        android:layout_alignStart="@+id/ipaddress"
+        android:layout_marginTop="68dp" />
+
+</RelativeLayout>
